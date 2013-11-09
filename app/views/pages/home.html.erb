@@ -1,16 +1,8 @@
-<div class="jumbotron">
-	<h1>Welcome! I'm glad you're here :)</h1>
-	<h3>Read the following instructions carefully and respond as you think best.</h3>
-	<p>But before reading further consider the question: Are you completely happy with your life as it is right now? Pause a moment while you think about it...</p>
-	<p>Ready to continue? Ok, good.</p>
-	<p>So there are two buttons shown below. A yellow button and a red button. Think about how you answered the above question. Decide which button to press. I would suggest that you click on the yellow button. Maybe you shouldn't click on the red button. But do be so kind and enter your email address in the input box provided if you are considering clicking on the yellow button. Assuming you do that be patient and at a certain as yet unspecified future date you will receive further instructions. You may still enter your email address even if you decide on the red button. But I wouldn't recommend it. Just kidding!</p>
-	<form role="form">
-		<input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
-		<%= link_to "Press Me :)", "#", class: "btn btn-primary btn-lg" %>
-		<%= link_to "Otherwise Click Here.", "#", class: "btn btn-danger btn-lg" %>
+<div class="jumbotron center">
+	<h1>Welcome to my app!</h1>
+	<p>
+		<%= link_to "Log in", "#", class: "btn btn-default btn-lg" %>
+		<%= link_to "Sign up", "#", class: "btn btn-primary btn-lg" %>
+	</p>
 
 </div>
-
-<script type="text/javascript">
-$.backstretch("/assets/birdCollage1.jpg");
-</script>
