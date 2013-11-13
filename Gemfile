@@ -28,7 +28,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 gem 'devise', "~> 3.2.0"
-gem 'paperclip', '~> 3.0'
+gem 'paperclip', '~> 3.5.2'
+gem 'aws-sdk', '~> 1.5.7'
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
