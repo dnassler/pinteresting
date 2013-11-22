@@ -13,10 +13,12 @@
               <span class="glyphicon glyphicon-edit"></span>
               Edit
             <% end %>
-            <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+            <% confirm_message = pin.description %>
+            <%= link_to pin, method: :delete, data: { confirm: "Delete pin: " + confirm_message + "?" } do %>
               <span class="glyphicon glyphicon-trash"></span>
               Delete
             <% end %>
+
           </div>
         <% end %>
       </div>
