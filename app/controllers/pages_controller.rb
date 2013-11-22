@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def stories
   end
   
+  def projects
+  end
+  
 end
