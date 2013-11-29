@@ -6,7 +6,8 @@ Pinteresting::Application.routes.draw do
   get "stories" => "pages#stories" # creates stories_path
   get "projects" => "pages#projects" # creates projects_path
   get "testModal" => "pages#testModal" # creates testModal_path
-  
+  get "testImg" => "pages#testImg" # creates testImg_path
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

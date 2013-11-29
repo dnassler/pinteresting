@@ -14,5 +14,10 @@ class PagesController < ApplicationController
 
   def testModal
   end
+
+  def testImg
+        @visitor = Visitor.new
+
+  end
   
 end

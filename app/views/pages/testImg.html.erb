@@ -1,0 +1,41 @@
+<div id="video1" style="position:fixed;z-index:-99;width:100%;height:100%">
+<iframe src="//www.youtube.com/v/wrHdH-dmvTo?autoplay=1&rel=0&enablejsapi=1&playerapiid=ytplayer&controls=0" width="100%" height="100%" frameborder="0px"></iframe>
+</div>
+
+<!-- <div style="width:100%;height:100%;background:black;">
+ -->
+ <div class="container">
+	<div class="row" style="margin-top:70px">
+
+<!-- <iframe src="//player.vimeo.com/video/4030548?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1" width="1200" height="674" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+
+
+<div class="jumbotron" style="background-color: rgba(36,32,33,0.50); color:rgb(255,255,255)">
+	<h1>Welcome! I'm glad you're here :)</h1>
+	<h3>Read the following instructions carefully and respond as you think best.</h3>
+	<p>But before reading further consider the question: Are you completely happy with your life as it is right now? Pause a moment while you think about it...</p>
+	<p>Ready to continue? Ok, good.</p>
+	<p>So there are two buttons shown below. A yellow button and a red button. Think about how you answered the above question. Decide which button to press. I would suggest that you click on the yellow button. Maybe you shouldn't click on the red button. But do be so kind and enter your email address in the input box provided if you are considering clicking on the yellow button. Assuming you do that be patient and at a certain as yet unspecified future date you will receive further instructions. You may still enter your email address even if you decide on the red button. But I wouldn't recommend it. Just kidding!</p>
+	
+	<%= form_for @visitor do |f| %>
+	
+<!-- 		<input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+ -->		 
+		
+		<div class="form-group">
+ 			<%= f.email_field :email, autofocus: true, class: "form-control", placeholder:"Enter email here" %>
+ 		</div>
+
+		<div class="form-group">
+			<%= f.submit "Press Me :)", class: "btn btn-primary btn-lg" %>
+ 			<%= f.submit "Otherwise Click Here", class: "btn btn-danger btn-lg" %>
+ 		</div>
+	<% end %>
+
+</div>
+
+
+	</div>
+</div>
+
+
