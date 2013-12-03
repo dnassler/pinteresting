@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def stories
+    @story = Story.new
   end
   
   def projects

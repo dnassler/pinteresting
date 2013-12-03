@@ -11,7 +11,18 @@
 
 	<%= render 'layouts/header' %>
 
-		<%= yield %>
+<!-- 	<div style="margin-top:70px">
+
+	<% flash.each do |name, msg| %>
+				<div class="alert alert-info fade in">
+				<a class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
+					<%= content_tag(:div, msg) %>
+			</div>
+	<% end %>
+
+	</div>
+ -->
+	<%= yield %>
 
 </body>
 </html>

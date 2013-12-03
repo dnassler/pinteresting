@@ -1,9 +1,11 @@
 Pinteresting::Application.routes.draw do
+  resources :stories
+
   resources :visitors
 
   root "pages#home"
   get "about" => "pages#about" # creates about_path
-  get "stories" => "pages#stories" # creates stories_path
+  get "storyPage" => "pages#stories" # creates storyPage_path
   get "projects" => "pages#projects" # creates projects_path
   get "testModal" => "pages#testModal" # creates testModal_path
   get "testImg" => "pages#testImg" # creates testImg_path

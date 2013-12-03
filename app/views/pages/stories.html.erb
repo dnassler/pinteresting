@@ -4,13 +4,28 @@
 <div class="col-md-6 frost-layer-home">
 	<h1 id='myH1'>Share your life's mini-stories!</h1>
 	<p>No matter how seemingly insignificant the details of an experience are, the context around it is interesting and worth sharing. Tell us about a particular moment of your life that occured within the last day or two. It could be a random thought you had. It could be a funny hat you saw someone wearing on the way to work. It could be that dumb advertisement you saw on a billboard while realizing you'll need to do laundry when you get home. Whatever it is, type it in below. Try to limit your response to less than 5 sentences. At the end of the mini-story add a few descriptive twitter-like hashtags. When you're ready, press the yellow button to save.</p>
+
 	<div class="row">
 		<div class="col-md-12">
-	<textarea class="form-control" placeholder="Enter your story here..." rows="8"></textarea>
+			<%= form_for @story do |f| %>
+
+				<%= render 'shared/error_messages' %>
+				
+				<div class="form-group">
+		 			<%= f.text_area :words, autofocus: true, class: "form-control", placeholder:"Enter your story here...", rows:10 %>
+		 		</div>
+
+				<div class="form-group">
+		 			<%= f.submit "Upload Memory Fragment", class: "btn btn-danger btn-lg" %>
+		 		</div>
+
+			<% end %>
+
 		</div>
 	</div>
 		<br>
-		<%= link_to "Upload Memory Fragment", "#", class: "btn btn-primary btn-lg" %>
+
+
 </div>
 </div>
 
