@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="row" style="margin-top:100px">
+		<div id='e2'>
+		<div id="e1">
+			<div class="jumbotron">
+				<div class="center">
+				<h1>Thankyou!</h1>
+			</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+$.backstretch( "<%= image_path('clouds1.jpg') %>" );
+$('#e1').addClass('animated flipInX');
+setTimeout(function(){$('#e2').addClass('animated fadeOut')},3000);
+</script>

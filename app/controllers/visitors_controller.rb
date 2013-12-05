@@ -26,9 +26,10 @@ class VisitorsController < ApplicationController
   def create
     @visitor = Visitor.new(visitor_params)
 
+
     respond_to do |format|
       if @visitor.save
-        format.html { redirect_to projects_path }
+        format.html { redirect_to thankyou_path }
       else
         format.html { redirect_to root_path }
       end
