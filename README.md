@@ -1,6 +1,5 @@
-# One Month Rails
+This is as Jekyll theme built to make single page websites, articles, or literary masterpieces readable anywhere.
 
-This is the pinteresting sample application for
-[*One Month Rails*](http://onemonthrails.com)
+### [Demo and Documentation](https://adueck.github.io/good-clean-read)
 
-by [Mattan Griffel](http://mattangriffel.com)
+Built on top of <a href="http://chibicode.github.io/solo">Solo</a>, by [Shu Uesugi](https://github.com/chibicode)
